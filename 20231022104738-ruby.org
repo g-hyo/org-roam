@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3f751638-5290-4eb5-a651-b571835780c9
+:END:
+#+title: Ruby
+
+Ruby is an interpreted, high-level general-purpose programming language which supports multiple programming paradigms.
+
+* References
+
+https://en.wikipedia.org/wiki/Ruby_(programming_language)

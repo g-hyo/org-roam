@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7c3a0269-8618-49b9-9295-1e87a4880c63
+:END:
+#+title: sql server
+
+Microsoft SQL Server (Structured Query Language) is a relational database management system developed by Microsoft.
+
+It uses [[id:078560e9-3b2a-4e54-96b1-c0c42245bd1d][Transact SQL]], which expands on the SQL standard.

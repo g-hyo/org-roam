@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       c14123f9-38ca-4ca8-a274-c96798543bb0
+:END:
+#+title: class
+
+In object-oriented programming, a class is a definition of the methods and variables for a particular kind of object.
+
+* R
+
+In R's S3 class system you can set the class attribute via three methods
+
+1. overwrite
+   `class(object) <- "MyClass"`
+
+   This is a new object which you will have to set methods for
+
+   This will add the class after the existing class, meaining that it will only get called when there is no method for the initial classes. Not quite sure why you would want this
+
+2. prepend
+   `class(object) <- append("MyClass", class(object))`
+
+   This will add the class before the existing class, meaning that your new methods will take precedence over the initial classes. This is how `tibble` works in dplyr.
+
+3. append
+   `class(object) <- append(class(object), "MyClass")`

@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       95fc7e79-6aaa-4676-a9ff-bd1003553746
+:END:
+#+title: lisp

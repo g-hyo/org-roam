@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       3def7104-0c85-40e8-810f-19ca53c836fd
+:END:
+#+title: HTTP header
+
+HTTP headers let the client and server pass additional information with an HTTP request or response.
+
+They typically consist of case-insentitive name followed by a colon `:` and value. Whitespace before the value is ignored.
+
+* Reference
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers

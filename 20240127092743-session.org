@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7880e452-27a1-471c-9411-af5b33fed687
+:END:
+#+title: session
+
+In computer science, a session is a time-delimited two-way link enabling interactive information exchange between two or more communication devices or ends.

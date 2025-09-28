@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       c3af5c6d-003d-4d4d-9a1d-020a63551d1e
+:END:
+#+title: gradient tree boosting
+
+Gradient tree boosting is a technique based on [[id:a6f42b13-198e-4f6b-aa2b-64227cd61207][boosting (machine learning)]]
+
+Essentially, you start with a function `F` that predicts some value `y`. Gradient boosting occurs with M stages. At each stage m, the algorithm is improved by adding a new function/decision tree `h`
+
+```
+y = F(xi) + h(xi)
+```
+
+`h` will try to fit the residuals of `F`, thus attempting to correct the errors of its predecessor. `h` functions are added recursively until your model is satisfactory.
+
+* References
+http://www.chengli.io/tutorials/gradient_boosting.pdf

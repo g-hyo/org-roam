@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       3e3f9aaa-5f81-4a55-bb52-78dc376b42a9
+:END:
+#+title: hyperfile (tableau)
+
+* Hyper Files
+A Tableau Hyper file is a file format (`.hyper`) used by Tableau.
+
+`.hyper` is optimised for use with Tableau, such that it should be quicker to load in and modify data.
+
+* Hyper File Generation
+
+Note that tableau have released an API to produce and interact with hyper files.
+
+See https://tableau.github.io/hyper-db/docs/ for more details

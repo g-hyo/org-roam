@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       cd07ccd2-4424-4798-84f9-8e5cbdd61844
+:END:
+#+title: rlang
+
+
+rlang is a collection of frameworks and APIs for programming in R.
+
+Usefully, rlang can be used to store R expressions such that they can be executed at a later point in time. This is useful when we would like to provide expressions as an argument into a function (i.e., if we are writing a function where we'll be running `dplyr` functions within).
+

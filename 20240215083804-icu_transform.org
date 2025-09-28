@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       8f9dd799-765e-4d8f-be14-8938707ed0b2
+:END:
+#+title: icu transform
+
+ICU (International Components for Unicode) is an open source project comprised of libraries for [[id:176814ac-f1a6-4033-b96d-5674b9df684a][unicode]]
+
+The ICU transform in particular, provides support for character set conversions
+
+For example, one might want to convert from the `Latin` character set to `ASCII`
+
+* References
+https://en.wikipedia.org/wiki/International_Components_for_Unicode
+https://unicode-org.github.io/icu/userguide/transforms/general/

@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       28c5d199-171b-4ada-9832-c6e49fefcba4
+:END:
+#+title: jekyll
+
+Jekyll is a static website generator written in Ruby
+
+* Usage
+
+The two main commands you will be using to modify the site will be
+
+ * `jekyll build` - Builds static site to `_site` directory.
+ * `jekyll serve` - build and runs on local web server. You can use `--livereload` to refresh the site with every change.
+
+* Themes
+
+To install themes for `jekyll`, you will want to modify your `jekyll` `Gemfile` to specify the `gem` to be used, and then you will want to run the following to install the gem as well as required dependencies:
+
+=+
+bundle install
+=+

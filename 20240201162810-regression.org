@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       42118c23-3c6a-4a37-b01e-a9135d96f344
+:END:
+#+title: regression
+
+In statistics, regression analysis is a set of statistical processes used for estimating relationships between a dependent variable and one or more independent variables.
+
+The most common form of regression, is a linear regression.

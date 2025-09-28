@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       3f4632ac-9d71-47fb-b40b-cde1eb2f3875
+:END:
+#+title: PLIDA
+
+PLIDA is a secure data asset combining information on health, education, government payments, income and taxation, employment, and population demographics (including the Census) over time.
+
+Essentially it is linked data across various Australian government data assets. It includes AEDC.
+
+* References
+
+https://www.abs.gov.au/about/data-services/data-integration/integrated-data/person-level-integrated-data-asset-plida

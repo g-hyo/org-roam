@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       c1f5fb57-d1b9-4988-807c-f5e58c3a6dee
+:END:
+#+title: confusion matrix
+
+A confusion matrix is a table layout that visualises the performance of a classification algorithm.
+
+* Binary Case
+
+In the case of binary classification, a confusion matrix is simply a table of actual vs predicted values
+
+            Predicted
+Observed   | Positive        | Negative        |
+           | True Positives  | False Negatives |
+           | False Positives | True Negatives  |
+
+From this matrix, you can derive metrics such as sensitivity, specificity or the matthews correlation coefficient, which can be used to assess the accuracy of your classification algorithm.

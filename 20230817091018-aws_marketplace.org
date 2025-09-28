@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       323c9132-392e-44e1-b2a1-5b3a4ff97193
+:END:
+#+title: AWS marketplace
+
+* AWS Marketplace
+
+Refer to:
+
+https://aws.amazon.com/marketplace
+
+
+Note that POSIT is a member

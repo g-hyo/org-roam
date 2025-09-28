@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       accf6ae8-7296-403c-aaf9-caed90dae25d
+:END:
+#+title: hexadecimal
+
+In math and computing, hexadecimal notation is a numerical system which represents numbers using a base of 16. Hexadecimal uses 16 distinct symbols to represent values. 0-9 to represent 0-9, and "A"-"F" to represent values from 10-15.
+
+* Usage
+
+Software developers often use hexadecimal notation because they provide a human-friendly representation of binary-coded values. Each hexadecimal digit represents four bits (sometimes known as a nibble).
+
+As an example, a byte (8-bit value) has values ranging from 00000000 to 11111111 in binary form. It can be conveniently represented as 00 to FF in hexadecimal notation.
+
+** Some examples
+15 in hexadecimal is equivalent to 21 (16 + 5) in decimal, and 00010101 in binary
+FA in hexadecimal is equivalent to 250 (16 * 15 + 10) in decimal, and 11111010

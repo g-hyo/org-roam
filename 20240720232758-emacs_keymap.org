@@ -1,0 +1,94 @@
+:PROPERTIES:
+:ID:       37c51621-0212-4e5e-939c-0d9d5b975f4b
+:END:
+#+title: emacs keymap
+
+A keymap is a Lisp data structure that specifies /key bindings/ for various key sequences.
+
+* Handy Definitions
+`key binding` - A binding of `KEY` to a specific `COMMAND`
+`keymap` - A list of key bindings
+`key` - A series of one or more key strokes
+
+* Mode Keymaps
+
+Most major and minor modes have a keymap which defines what key sequences achieve when they are sent to the buffer. Keys can have three categories:
+1. Undefined - No operation when invoked
+2. Prefix - Keys like `C-x` make parts of a `complete key`
+3. Complete key - Combination that resolves to a valid command. For example, `g` or `C-x C-f`
+
+To view all the active minor and major mode keymaps in a buffer, type `C-h m`
+
+* Representing Keys
+
+Emacs can represent keys in multiple ways. For this reason, it is generally recommended to use `kbd` to define keys. `kbd` converts a human-readable key into a format Emacs can understand.
+
+** kbd
+
+`kbd` converts the text `keyseq-text` into a key sequence. `kbd` is intentionally flexible such that even if the syntax provided is not exact, something sensible may be returned. To check whether syntax is valid, use the `key-valid-p` function.
+
+Below are some examples of how the `kbd` function can be used to generate valid emacs keys.
+
+#+
+(kbd "C-x") => "\C-x" ;; Key Expressed as string
+(kdb "RET") => "^M" ;; Key Expressed as string
+(kbd "X") => "X" ;; Key Expressed as string
+(kbd "<f1> SPC") => [f1 32] ;; Key expressed as vec
+(kbd "C-M-<down>") => [C-M-down] ;; Key expressed as vec
+#+
+
+Note that function key names (i.e., `f1`) should be surrounded with `<>`.
+
+* Mode keymaps
+
+Typically, after keymaps are generated, they are bound to a variable. All modes do this to define their key maps-- a mode called `foo` almost always has a variable called `foo-mode-map`.
+
+* Updating keymaps
+
+There are multiple ways to update keymaps. In particular:
+
+#+
+(define-key KEYMAP KEY DEF)
+#+
+- Defines a key against a keyboard map. Use this if you want to change a keymap that is not the current buffer map.
+
+#+
+(local-set-key KEY COMMAND)
+#+
+- Bind a key to the local keymap used by the active buffer. This differs from `define-key` in that it does not require an explicit keymap to bind a key against.
+
+Note that when updating keymaps, any existing keymaps will be overridden. You can enumerate all active major and minor mode keymaps in the buffer with `C-h m`. If you would like to search for a particular existing key binding (i.e., if you would like to potentially assign it to a command), you can use `C-h k`.
+
+* Updating keymaps for a major mode
+
+As mentioned, modes typically have a keymap associated with them. To modify these, you can add a [[id:3db5b4af-f38e-455a-9934-48fb6e9ee747][emacs hook]] to your config file where `local-set-key` is run for your specific mode. For example:
+
+#+
+;; Function to set key binding
+(defun mp-add-python-keys ()
+(local-set-key (kbd "C-c q") 'shell))
+
+;; Add to python hook
+(add-hook 'python-mode-hook #'mp-add-python-keys)
+#+
+
+* Doom
+
+Note that `doom` emacs adds another layer of complications to key bindings, particularly because of its use of `evil` mode. To simplify things, Doom provides a general map! macro, to conveniently wrap up the keymapping options into a more succinct syntax. Comprehensive examples of map!’s usage can be found in its documentation (keyboard shortcut: <help> f map\!).
+
+For example, to add a keybinding for `C-RET` to ESS-mode
+
+#+
+(map! :mode ess-mode :after ess :nvi "C-<return>" #'ess-eval-paragraph-and-step)
+#+
+
+`:nvi` specifies that the keybinding applies in normal, visual and insert mode.
+:mode specifies that the keybinding applies for ess mode
+:after specifies that the keybinding is applied AFTER the ess package is loaded. If this is not done, then the keybinding might be loaded before the package itself applies its key bindings.
+
+
+For more information, refer to the documentation for `map!` by hitting `C-h f` followed by `map!`
+
+* References
+https://www.gnu.org/software/emacs/manual/html_node/elisp/Keymaps.html
+https://www.masteringemacs.org/article/mastering-key-bindings-emacs

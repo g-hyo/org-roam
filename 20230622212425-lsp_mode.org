@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       603c1bfa-f3b9-4efb-a0d3-70c6de761e56
+:END:
+#+title: LSP Mode
+
+LSP mode is an [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][Emacs]] package which lets you run an [[id:27cc2e56-a578-42b1-a0be-55a8debc106f][LSP]] from within Emacs.
+
+This essentially allows you to use Emacs like an IDE.
+
+
+** How it works
+
+LSP mode is a client-server application, with Emacs as the client. For it to work, you will need a separate _language server_ that understands the specifics of your language
+
+** Language server
+
+In order to use `lsp-mode` you will need to install a langauge server for your language
+
+** Using R
+
+For example,  to use `lsp-mode` with R, you would have to install the "languageserver" package in R. You would then have to initialise an R session with ~M-x R.~
+
+In R, you would then need to run
+~languageserver::run()~
+
+
+
+
+** Extensions
+
+Along with LSP mode, there are a handful of packages which may be handy.
+
+lsp-ui - Useful higher level UI modules 
+flycheck - Syntax checking 
+company-mode - Autocompletion in a major buffer
+lsp-treemacs - For displaying a tree-like file directory on the side
+helm-lsp -
+lsp-ivy - Support the use of workspace symbols
+dap-mode - Used for debugging
+
+For more info see:
+https://emacs-lsp.github.io/lsp-mode/page/installation/

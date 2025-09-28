@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1897a0ff-0869-480f-abc4-3845d175fdb2
+:END:
+#+title: Emacs
+
+Emacs is an awesome text editor. With it you can take notes with
+cool packages such as [[id:cc86aead-538c-4349-89b4-2938a0c51e4e][orgmode]] and  [[id:d3c13339-8801-4ae1-8bd7-938541435dc6][orgroam]]
+
+You can also heavily custom emacs with packages such as [[id:0f244946-03a2-4eb2-a604-c316dea0187d][vertico]]
+

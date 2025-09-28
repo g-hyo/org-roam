@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       5bfa1964-6154-4420-b561-14d195e57245
+:END:
+#+title: lasso regression
+
+LASSO (least absolute shrinkage and selection operator) is a [[id:42118c23-3c6a-4a37-b01e-a9135d96f344][regression]] analysis method that performs both [[id:7c151b64-b6e1-481c-9b04-c3997f6b2a55][feature selection]] and [[id:e50db1f0-b252-41d9-af34-9e3ccd5c8442][regularisation]].
+
+LASSO was introduced in order to improve the accuracy and interpretability of regression models. Essentially, it is a method for choosing covariates and supersedes stepwise selection and ridge regression. The former helps select covariates while the latter improves prediction error, but neither method used to do both.
+
+LASSO regression assumes that the coefficients of the linear model are sparse (few of them are non-zero). Though originally defined for linear regression, it can be easily extended to other statistical models.
+
+* Method
+
+LASSO regression in its simplest form is simply OLS ([[id:023bc72c-6ceb-4f94-9f8b-52079592925f][ordinary least squares]]) with an additional constraint that the sum of the coefficients does not surpass some constant. This penalty term encourages sparse solutions by shrinking some coefficients to zero, effectively performing variable selection.
+
+* Reference
+https://www.sciencedirect.com/topics/psychology/lasso-regression
+https://en.wikipedia.org/wiki/Lasso_(statistics)

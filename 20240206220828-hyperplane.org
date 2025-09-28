@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e6754b29-f406-45cb-b94d-919107b1d2fd
+:END:
+#+title: hyperplane
+
+Without going into mathematical detail, a hyperplane is a flat subspace which divides the space into two parts.

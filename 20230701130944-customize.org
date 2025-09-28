@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       c1386212-358d-4c1e-9fde-f4f4b7639fd8
+:END:
+#+title: Customize
+#+filetags: emacs
+
+Customize is an interface in [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][Emacs]] which allows for one to easily modify emacs
+settings via a GUI.
+
+It is useful for modifying the appearance of Emacs when one is still not
+super comfortable with `elisp` code.
+
+To run it, just us `M-x customize`

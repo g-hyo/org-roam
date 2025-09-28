@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1172da58-a481-40d0-a4bb-9c1761661b27
+:END:
+#+title: graphql
+
+GraphQL is an open-source data query and manipulation language for APIs.
+
+Instead of multiple endpoints that return separate data, a GraphQL server exposes a single endpoint.

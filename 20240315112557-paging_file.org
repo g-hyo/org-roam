@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       992ca507-8097-464b-a684-b070962dd351
+:END:
+#+title: paging file
+
+A paging file is a Windows physical extension of RAM that is used as additional virtual memory. Note that accessing memory from the paging file is slower than RAM.
+
+* References
+
+https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file

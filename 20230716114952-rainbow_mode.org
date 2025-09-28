@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       3f875a96-5ad1-4b42-bfc9-dff94ff76f73
+:END:
+#+title: Rainbow Mode
+
+Rainbow mode is a minor mode in [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][Emacs]] which sets background color to strings that match color
+names, e.g. #0000ff is displayed in white with a blue background.
+
+** Usage
+
+This is particularly helpful when using `list-colors-display` in emacs as you can quickly
+preview a colour. This is particularly handy when using [[id:c1386212-358d-4c1e-9fde-f4f4b7639fd8][Customize]] to update your emacs faces so you can
+see just how well a colour might work for your current theme.
+
+
+
+** References
+https://elpa.gnu.org/packages/rainbow-mode.html

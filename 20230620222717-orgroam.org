@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6d3fc946-e117-4267-bd96-205e8ff84277
+:END:
+#+title: orgroam
+#+filetags: emacs
+
+Orgroam is a handy notetaking tool written as an [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][emacs]] extension.
+

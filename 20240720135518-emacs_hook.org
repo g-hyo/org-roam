@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       3db5b4af-f38e-455a-9934-48fb6e9ee747
+:END:
+#+title: emacs hook
+
+/hooks/ are an important mechanism for customizing Emacs. A hook is a Lisp variable which holds a list of functions, which are called on a particular occasion.
+
+For example, the hook `kill-emacs-hook` runs just before exiting Emacs.
+
+* Types of Hooks
+
+** Normal
+
+Most hooks are normal hooks. Emacs will run the hook and call each hook function with no arguments. These types of hooks are kept in this form so that they can be used in a uniform manner.
+
+Variables whose name ends in `-hook` are normal hook.
+
+** Abnormal hooks
+
+Abnormal hook names end in `-functions` instead of `-hook` (although ocassionally, you will come across `-hooks` for older abmormal hooks). These hooks diverge from normal hooks in that they might require arguments, or the values they return are used in some way.
+
+An example of an abnormal hook is `find-file-not-found-functions`. For this hook, if one hook functions returns a non-nil value, the other hooks are not run at all.
+
+For abnormal hooks, you will need to read the documentation.
+
+* Adding hooks
+
+Just like a regular Lisp variable, you can set a hook variable with `setq`, but the recommended way to add a function to a hook is to use `add-hook`. For example:
+
+#+
+(add-hook 'foo-mode-hook 'bar-function)
+#+
+
+Will add `bar-function` to the hook called `foo-mode-hook`'.
+
+* Major mode hooks
+
+Most major modes run one more more mode hooks as the last step of initialization. Hooks are a convenient way to customise the behaviour of individual modes. In fact, every major mode command runs a normal hook called the /mode hook/ as an initialization step. This allows the user to customize the behaviour of the moode. Most minor mode functions also run a mode hook at th end.
+
+* References
+
+https://www.gnu.org/software/emacs/manual/html_node/elisp/Setting-Hooks.htm
+
+l

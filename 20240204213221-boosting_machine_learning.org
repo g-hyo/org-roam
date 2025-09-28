@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a6f42b13-198e-4f6b-aa2b-64227cd61207
+:END:
+#+title: boosting (machine learning)
+
+Boosting in the context of machine learning, is an ensemble algorithm that converts weak learnings to strong ones. It is based on a question posed by Kearns and Valiant (1988, 1989):
+
+ "Can a set of weak learners create a single strong learner?" A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better than random guessing). In contrast, a strong learner is a classifier that is arbitrarily well-correlated with the true classification.

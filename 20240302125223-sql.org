@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       0cf1506f-b63c-48b6-84b8-26c46b08d9d6
+:END:
+#+title: sql
+
+Structured Query Language is a domain-specific computer language used to manage data, especially in relational database management systems (RDBMS).
+
+SQL is used in various RDBMS, and is generally useable across common RDBMS, although variants such as [[id:078560e9-3b2a-4e54-96b1-c0c42245bd1d][Transact SQL]] exist.
+
+* Structure
+
+A SQL query is composed of multiple elements including:
+- Clause
+- Expression
+- Predicate
+- Query
+- Statement
+
+* Order of execution
+
+The clauses of a query have an order of execution:
+
+1 = FROM
+2 = WHERE
+3 = GROUP BY
+4 = HAVING (Used to filter rows resulting from group by)
+5 = SELECT
+6 = ORDER BY (Used to identify columns to sort data)
+7 = OFFSET (Number of rows to skip before returning data)
+8 = FETCH FIRST (Number of rows to return)
+
+* Subquery
+
+Queries can be nested such that the results of one query can be used in another query. Nested queries are known as subqueries
+
+** `WITH` clause
+
+Since 1999, SQL allows the use of the use of the `WITH` clause to specify named subqueries (also called a common table expression).
+
+Interestingly, CTEs can be recursive. For example, to calculate the factorial of numbers from 0 to 9, one could use:
+
+#+
+WITH recursive temp (n, fact) AS (
+    SELECT 0,   1                                   -- Initial Subquery
+  UNION ALL
+    SELECT n+1, (n+1)*fact  FROM temp  WHERE n < 9  -- Recursive Subquery
+)
+SELECT * FROM temp;
+#+

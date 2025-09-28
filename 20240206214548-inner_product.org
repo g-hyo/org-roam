@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       fba474c7-7ea8-4d65-aec1-dd55c6d27361
+:END:
+#+title: inner product
+
+In linear algebra, the inner product also known as a dot product, is an operation defined for vectors that yields a scalar quantity.
+
+For two vectors, v and w, the inner product is calculated as:
+
+\[
+v \cdot w = v_{1}w_{1} + v_{2}w_{2} + ... + v_{n}w_{n}
+\]

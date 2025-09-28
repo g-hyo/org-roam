@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       397bf7c4-67a6-46b6-9e8f-9dbc29fbd129
+:END:
+#+title: matrix multiplication
+
+Matrix multiplication is defined as follows
+
+Given two matrices A and B where A has dimensions m x n, and B has dimensions n x p, the product C = AB is a matrix C with dimensions m x p.
+
+Each element $c_{ij}$ of C is computed as the sum of the product of the elements of the $i^{th}$ row of A, and the $j^{th}$ column of B.
+
+Due to this definition, matrix multiplication is only defined when the number of columns in matrix A is equal to the number of rows in matrix B.

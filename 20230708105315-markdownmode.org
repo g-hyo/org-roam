@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       98b7872a-38df-400c-b17f-bb0375d873a5
+:END:
+#+title: markdownmode
+
+Markdown mode is a handy emacs package which lets you modify markdown text with some of the handy functionality that is often associated with [[id:cc86aead-538c-4349-89b4-2938a0c51e4e][Orgmode]]
+
+
+*** Handy tips
+   - Use `tab` to fold a section
+   - `shift-tab` to fold all sections

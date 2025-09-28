@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       5da0b562-0818-45c7-bdbf-5820ca4baff7
+:END:
+#+title: k nearest neighbour
+
+# K Nearest Neighbours
+
+K Nearest Neighbour (KNN) is a method of supervised learning algorithm.
+
+It uses observations in the training set $\tau$ closest in the input space to $x$ to form $\hat{Y}$
+
+Mathematically, it is defined as follows:
+\[
+\hat{Y}(x) = \frac{1}{k} \sum_{x_{i} \epsilon N_{k}(x)}y_i
+\]
+
+Where:
+
+$\hat{Y}(x)$ represents the predicted value of target Y for a given input x
+
+$N_{k}(x)$ represents the set of K nearest neighbours of input x in the training dataset
+
+$x_{i}$ represents each neighbour in the set $N_{k}(x)$
+$y_{i}$ represents the target value for each neighbour $x_{i}$
+
+Essentially, the average of the outputs for the set of neighbour inputs is used to generate a prediction for the input $x$
+
+* Properties
+
+- Error on the training data is an increasing function of k, and will be 0 for k = 1
+- The effective number of parameters of KNN is N/k
+- You cannot use sum of squared errors on training, as this will always pick k = 1

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       343fb6e5-24e8-4c86-bfc8-9b2ae41d9f47
+:END:
+#+title: ACID guarantee
+
+In computer science, ACID is a set of properties for database transactions intended to guarantee data validity.
+
+The properties of ACID are as follows:
+
+* Atomicity
+
+Atomicity guarantees that each transaction is a single "unit". Each unit either fails or succeeds completely; if any of the components of the transaction fails, then the entire transaction fails. An atomic system guarantees this in every situation, including power failures, errors and crashes.
+
+* Consistency
+
+Consistency ensures that a transaction can only bring the database from one consistent state to another. Any data written to the database must be valid according to all defined rules. This prevents corruption by illegal transactions.
+
+* Isolation
+
+Isolation ensures that concurrent execution of transactions is equivalent to serial execution.
+
+* Durability
+
+Durability guarantees that once a transaction has been committed, it remains committed even in case of a system failure. Essentially, completed transactions are recorded in non-volatile memory (memory that is retained even after power is removed).
+
+
+* Issues when you do not have ACID
+
+Data systems that do not have ACID guarantees can run into issues down the track. For example, apache arrow's hive partition parquet allows one to write a hive partition even if the schema is different in the current partition. This violates `consistency` and as it turns out, results in issues when later trying to read in the data.

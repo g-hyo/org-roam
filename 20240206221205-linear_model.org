@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       8a4077cd-e2a9-45c3-acfb-9db0c516e24c
+:END:
+#+title: linear model
+
+The linear model is used in machine learning to predict an output given a set of features.
+
+* Details
+
+Given a vector of inputs:
+
+\[
+X^T = (X_{1}, X_{2}, ..., X_{p})
+\]
+
+Where $X^T$ denotes a matrix transpose ($X$ being a column vector)
+
+We can predict output Y via the model
+
+\[
+\hat{Y} = \hat{\beta}_{0} + \sum_{j=1}^p X_{j}\hat{\beta}_{j}
+\]
+
+Where $\hat{\beta}_{0}$ is the intercept, also known as /bias/ in machine learning.
+
+It is common convention to include the constant 1 in X, and subsequently include the intercept in the vector of coefficients $\hat{\beta}$. The linear model can thus be written in vector form as an [[id:fba474c7-7ea8-4d65-aec1-dd55c6d27361][inner product]]
+
+\[
+\hat{Y} = X^T\hat{\beta}
+\]
+
+In this case, $\hat{Y}$ can be a vector with size $K$. In which case, $\beta$ would be a $p \times K$ matrix of coefficients. In a $p+1$ dimensional input-output space, $(X, \hat{Y})$ represents a [[id:e6754b29-f406-45cb-b94d-919107b1d2fd][hyperplane]]. For example, in the case where X represents a single predictor variable, $(X, \hat{Y})$ would simply be a line in two dimensional space.

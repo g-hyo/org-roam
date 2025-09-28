@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       37171191-3224-4df6-ae31-70ec0c963fa0
+:END:
+#+title: powertoys
+
+Microsft PowerToys is a set of freeware system utilities for the Windows operating system
+
+Of note is that it allows you to easily remap keys on a Windows system. For example, you can remap `caps-lock` to `esc` to facilitate vim keybindings

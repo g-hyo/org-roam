@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       3e111fd2-b5eb-411f-b4ec-9442c87026c1
+:END:
+#+title: turing machine
+
+A Turing Machine is a hypothetical machine thought up by Alan Turing. Despite its simplicity, the machine can simulate any computer algorithm.
+
+* Structure
+
+The Turing machine consists of an infinitely-long tape containing squares. Each square on the tape can contain the symbols 0, 1 and "" (blank). Such a machine would be called a 3-symbol Turing machine.
+
+At any time, the machine can have its head positioned over a square on the tape and perform some basic operations:
+- read the symbol
+- edit the symbol
+- move the tape left or right by one square
+- nothing
+
+* Machine State
+
+The turing machine has a state, which can be used to define the operation to action. This is how the machine terminates.

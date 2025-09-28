@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       45d534c1-45f5-4d02-8a29-3bd202688f3d
+:END:
+#+title: matrix calculus
+
+Matrix calculus is a specialized notation for doing multivariable calculus, especially over spaces of matrices.
+
+* Scalar operation equivalents
+
+** Division
+
+Unlike scalars, division is not defined in linear algebra. As such, linear equations are solved with other techniques like using the [[id:dd8d26c8-f383-4f22-9904-f6130dcb4be0][inverse (matrix)]]
+
+
+* Common Derivatives
+
+Where $B$ is a matrix, and $b$ is a scalar
+
+$f(x)$ -> $df/dx$
+$x^TB$ -> $B$
+$x^Tb$ -> $b$
+$x^Tx$ -> $2x$
+$x^TBx$ -> $2Bx$
+
+
+
+* Referances
+http://www.gatsby.ucl.ac.uk/teaching/courses/sntn/sntn-2017/resources/Matrix_derivatives_cribsheet.pdf

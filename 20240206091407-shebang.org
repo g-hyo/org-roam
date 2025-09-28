@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       aefa8639-18d9-43ae-b2c7-86a87eaa51a3
+:END:
+#+title: shebang
+
+A shebang is a character sequence consisting of `#!` placed at the beginning of a script.
+
+In unix systems, it defines how to interpret the file.
+
+* Examples
+`#!/bin/sh` - Execute using the shell
+`#!/bin/bash` - Execute using bash shell
+`#!/usr/bin/env python3` - Execute with Python, using the `env` program search path to find it.
+
+* Windows
+Windows does not actually support shebangs but `gitbash` seems to work with them
+
+
+* References
+https://en.wikipedia.org/wiki/Shebang_(Unix)

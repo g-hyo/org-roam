@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID:       2c5cb051-c756-43c3-bf92-6f00f5189d88
+:END:
+#+title: rstudio emacs
+
+Rstudio has the capability of adding in [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][Emacs]] keybindings.
+
+This feature may need some finaggling as it is implemented via the ACE editor (https://support.posit.co/hc/en-us/articles/210928128-Emacs-Editor-Keybindings-in-the-RStudio-IDE)
+
+* Setup
+
+In order to setup Rstudio EMACS keybidings, you will need to disable a few default rstudio shortcuts
+that interfere with some of the base EMACS commands:
+
+ - ctrl+u = This is the universal argument in EMACS. It is key for doing `repeat` commands (i.e., `C-u 5 C-k` will delete the next 5 lines)
+
+   You will have to disable:
+   - Yank line up to cursor
+
+ - alt+l = Changes selection to lower case.
+
+   You will have to disable:
+   - Fold selected
+
+* Working Commands
+
+The following are commands which i have found to work 
+
+** Movement
+
+  General movement seems to work pretty fine
+
+** Modifying Text
+ The following work
+ - C-d to delete character
+ - M-d to delete word
+
+** Mark ring
+
+ The following work
+ - C-spc to set/unset mark
+ - C-u C-SPC to move point to where mark was
+    - This can be done for multiple previous marks, but it isnt technically a ring like in emacs
+
+** Kill ring
+
+  The following work
+  - C-k to kill to end of line
+  - C-y to 'yank' the last kill
+  - C-w to kill marked region
+
+  I have been trying to get copy marked region to work (normally, M-w) but have been unsuccesful
+
+** Rectangles
+
+ The following work (and are handy)
+ - C-x r to turn marked region into rectangle selection
+
+ 
+** Misc
+ The following works
+ - C-u `n` to run the next command `n` times.
+
+
+** Does not work
+ The following does not work (or I havent found out how?)
+ - M-w does not copy region. This is a huge issue, as you need to use C-c to copy, which can be slightly confusing 
+ - C-M-f/C-M-b should be used to move the cursor to matching brackets but does not work. I haven't got any C-M commands to work as a matter of fact.
+   This is a bit of a bummer as VIM's % command seems to work fine (moves cursor to matching bracket)
+ - C-_ does not undo. You need to use C-z to undo.
+
+** Fixes?
+- You could potentially create custom shortcuts to fill in for the above:
+  - M-w will need to be bound to a custom function that copies to clipboard somehow
+  - C-M-f/C-M-b could potentially be rebound to existing key bindings for matching brackets in Rstudio
+  - You can remap undo manually by modifying key bindings
+
+Because of the required changes to above, it is probably easiest to just learn and use the VIM key bindings with Rstudio.
+ 
+* Example
+
+
+library(stringr)
+check_ydm <- function(x) {
+  month <- str_replace(x, '')  
+}
+
+ 

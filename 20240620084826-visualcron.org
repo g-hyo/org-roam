@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       3d56b34d-298f-4215-8427-c14a02c2f209
+:END:
+#+title: visualcron
+
+VisualCron is an automation, integration and task scheduling tool for Windows. Compared to other automation tools, it has an easy to use interface, precluding the need for programming skills.
+
+* VCCommand
+
+VCCommand is a command line tool, located in `installfolder\VCommand` which lets the user interact with the VisualCron server.
+
+For more information, refer to the documentation:
+https://www.visualcron.com/doc/html/vccommand.html

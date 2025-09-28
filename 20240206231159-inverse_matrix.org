@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       dd8d26c8-f383-4f22-9904-f6130dcb4be0
+:END:
+#+title: inverse (matrix)
+
+The inverse of a matrix is a matrix that, when multiplied by the original matrix, results in the [[id:5da1f36b-6976-4498-b2fd-3738cd751ac6][identity matrix]].
+
+For a square matrix $A$, the inverse matrix $A^-1$ satisfies the following
+
+\[
+A * A^{-1} = A^{-1} * A = I
+\]
+
+Where [[id:397bf7c4-67a6-46b6-9e8f-9dbc29fbd129][matrix multiplication]] is used.

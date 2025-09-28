@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a6cbe448-b13f-4885-96b9-bf03ca94f027
+:END:
+#+title: helm
+#+filetags: emacs
+
+The Helm package written for [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][emacs]] is an incremental completion and selection narrowing framework.
+

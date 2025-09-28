@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6424d8ef-b201-454e-aff7-7a4a6317e499
+:END:
+#+title: REST API
+
+REST [[id:46fdb799-2b3f-40ce-ad51-3f69009cb127][API]] is an application programming interface that conforms to the constraints of the REST architectural style. REST stands for Representational State Transfer.
+
+* REST
+
+REST are a set of architectural constraints, rather than a set of standards, which means REST can be implemented various ways. The constraints are as follows:
+
+1. Clients are separated from the server by an interface
+2. Client-server communication uses a [[id:3097e1c1-5cb0-4bd4-9c4c-42fa9101bd05][stateless protocol]]
+3. The uniform interface (with four further constraints)
+  i. Individual resources are identified using URLS. Resources are conceptually different from the representations sent to the client.
+  ii. If a client hodls a representation, there is enough information to modify or delete the resource's state.
+  iii. Each message includes enough information about how to process the message.
+  iv. Hypermedia as the engine of application state: With just the initial URL for a REST application, the client should be able to user server-provided links to dynamically discover all the resources it needs. As access proceeds, the server responds with text that includes hyperlinks to other resources that are currently available.
+4. Responses indicate their own cachability
+5. Layers: A client cannot tell whether it is connected directly to the end server, or to an intermediary along the way.

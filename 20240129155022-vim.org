@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       2d28bdeb-ac25-49ce-9ce7-02d4242d8eb5
+:END:
+#+title: vim
+
+Vim is a popular text editor.
+
+Famously, its `normal` mode for editing allows one to do quick text exits with keyboard shortcuts.
+
+For example:
+- `ysiw(` (yank surround inside word) will add `()` around a word under the cursor
+- `5G` will go to line 5
+- `dd` will delete the line
+- "ma" will set a mark at the line under the cursor, "`a" will bring the cursor back to the mark. "a" can be replaced with any letter here to keep track of multiple marks.
+- Ctrl+F - Move forward one screenful. +B to move backward.
+- { - to move to start of previous paragraph. } to move to end of next paragraph
+- * - to select the word under the cursor
+- Ctrl + [ - Is usually set up as an alternative to get to normal mode.
+
+* References
+https://blog.sanctum.geek.nz/vim-anti-patterns/

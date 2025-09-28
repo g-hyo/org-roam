@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       d07bb9ae-32ff-4362-8ed1-dfaa3a50031c
+:END:
+#+title: git hook
+
+A git hook is a script that runs automatically every time a particular event occurs in a Git repository.
+
+- Hooks are located in the `.git/hooks` directory
+- Any scripting langauge can be used as long as it can be run as an executable. The shebang line (#!/bin/sh) defines how the file should be interpreted.
+- Note that git hooks are not tracked by git since they reside in the `.git` directory
+
+* Template
+git hooks should start with a [[id:aefa8639-18d9-43ae-b2c7-86a87eaa51a3][shebang]]
+
+```
+#!/usr/bin/env bash
+```
+
+This defines how the file should be interpreted. In the above case, `bash` is used, however `bash` could be replaced by `python` or `Rscript` for example.
+
+* Example
+
+Here is an example hook that I have written for the SRC to update the qiltwiki.
+
+```
+#!/usr/bin/env Rscript
+#
+# Test R script functionality as a git hook.
+#
+
+# Open logfile for writing both output and messages
+logfile <- file("log/gh_pre-commit.log", open = "wt")
+sink(logfile, type = "output")
+sink(logfile, type = "message")
+
+# Actions
+## Render quarto book
+quarto::quarto_render()
+
+## Publish to Lucy
+## `siteName` is enough for Connect to know where to publish
+rsconnect::deploySite(siteName = "qiltwiki",
+                      server = "lucy.srcentre.com.au",
+                      render = "none")
+# Close logs
+sink(type = "message")
+sink(type = "output")
+close(logfile)
+```
+
+
+* References
+https://www.atlassian.com/git/tutorials/git-hooks

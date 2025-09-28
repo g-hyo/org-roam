@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       46fdb799-2b3f-40ce-ad51-3f69009cb127
+:END:
+#+title: API
+
+An API is a set of protocols for building and integrating application software. An API provides an interface to interact with a system to retrieve information or perform a function. APIs can be conceptualised as mediators between users or clients and resources or web services. APIs essentially abstract away the details of how resources are retrieved or where they come from, so that the user is not required to know these things.

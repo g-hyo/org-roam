@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3097e1c1-5cb0-4bd4-9c4c-42fa9101bd05
+:END:
+#+title: stateless protocol
+
+A stateless protocol is a communication protocol in which the receiver must not retain [[id:7880e452-27a1-471c-9411-af5b33fed687][session]] state information from previous requests. Every request must be understood in isolation.

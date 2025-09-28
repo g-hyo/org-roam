@@ -1,0 +1,66 @@
+:PROPERTIES:
+:ID:       7aa246c5-96ba-4635-8d80-c35d96d897d5
+:END:
+#+title: http
+
+Hypertext Transfer Protocol (HTTP) is a protocol for transmitting [[id:3a42e66e-4861-4ae8-8346-1f3c20d83d01][hypermedia]] documents such as HTML. It was designed for communication between web browsers and servers but can also be used for other purposes.
+
+HTTP follows a client-server model, where the client opens a connection to make a request and waits until it receives a response.
+
+HTTP is a [[id:3097e1c1-5cb0-4bd4-9c4c-42fa9101bd05][stateless protocol]].
+
+* Messages
+
+Clients and servers communicate by exchanging individual messages. The messages sent by the client are referred to as /requests/, while the messages sent by the server are /responses/.
+
+Between the client and server, there could be multiple entities, collectively known as proxies which perform various operations.
+
+* Browser
+
+When a web page is displayed, the browser sends a request to fetch the HTML document representing the page. It also parses the file, making additional requests if needed (execution scripts, layout information and sub-resources such as images or video).
+
+* Server
+
+The server serves the document as requested by the client.
+
+* Proxies
+
+Proxies operate between the web browser and server. They perform functions such as caching, filtering, load balancing, authentication and logging.
+
+* HTTP statelessness
+
+In HTTP, there are no links between two requests. That being said, HTTP cookies allow the use of /stateful/ sessions. Using header functionality, HTTP cookies allow session creation on each HTTP request to share the same context or state. This is how one would be able to for example, keep track of e-commerce shopping baskets.
+
+* Connections
+
+HTTP requires a /reliable/ connection such that no messages are lost. TCP is the standard upon which HTTP is based. A TCP connection is established between a server and client.
+
+* HTTP Flow
+
+1. Open a TCP connection or reuse one
+2. Send an HTTP message
+3. Read the response sent by the server
+4. Close or reuse connection for further requests
+
+* HTTP Request
+
+An HTTP request consists of multiple elements.
+
+1. An HTTP method like GET, POST or OPTIONS, HEAD. These define the operation the client wants to perform.
+2. The path of the resource to fetch, with elements obvious from context removed. For example, the protocol (http), the domain (developer.mozilla.org) or the TCP port (80 for HTTP).
+3. Version of the HTTP protocol
+4. Optionally, [[id:3def7104-0c85-40e8-810f-19ca53c836fd][HTTP headers]]
+5. Optionally, a body for methods like `POST`, which contain the resource sent.
+
+* HTTP Response
+
+An HTTP response consists of the following elements:
+
+1. Version of HTTP protocol
+2.
+3. Status message
+4. [[id:3def7104-0c85-40e8-810f-19ca53c836fd][HTTP header]]s
+5. Optionally, a body containing the fetched resource
+
+* References
+https://developer.mozilla.org/en-US/docs/Web/HTTP

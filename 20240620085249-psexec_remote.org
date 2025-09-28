@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       9e612f5c-146d-4c7a-946e-ac9eacdf57f6
+:END:
+#+title: psexec (remote)
+
+PsExec is a Windows tool which lets you execute processes on other systems. Most notably, you can run command line prompts.
+
+* References
+
+https://learn.microsoft.com/en-us/sysinternals/downloads/psexec

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       f4cda62d-756b-4c21-95e9-f8a495cd16e8
+:END:
+#+title: treesitter
+
+* Treesitter
+
+Treesitter is an alternative method of conducting syntax highlighting. Compared to Emacs 'font-lock' method, which is the default, treesitter is meant to provide superior language specific highlighting.
+
+* Getting started
+
+Once treesitter is installed, you can enable it for a specific buffer by running `tree-sitter-hl-mode`. This will replace highlighting provided with `font-lock-mode` with tree-based syntax highlighting.
+
+* Setting treesitter as default
+
+In order to set `treesitter` as the default highlighting package for a particular major mode (i.e., ess or Python), you will have to add a [[id:3db5b4af-f38e-455a-9934-48fb6e9ee747][emacs hook]] containing `tree-sitter-hl-mode` to your specific major mode hook. For example:
+
+#+
+(add-hook 'rust-mode-hook 'tree-sitter-hl-mode)
+#+

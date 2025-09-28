@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       27cc2e56-a578-42b1-a0be-55a8debc106f
+:END:
+#+title: LSP
+
+LSP (Language Server Protocol) is a protocol which provides
+programming lagnuage-specific features like
+code completion, syntax highlighting in an
+integrated development environment (IDE)

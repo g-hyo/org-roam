@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       8b0d9fc2-0916-4ede-8f8b-eae31c2a99fd
+:END:
+#+title: grep
+
+* Equivalent
+
+** Windows
+
+Windows does not come with `grep` but instead has its own version, "findstr"
+
+Usage of "findstr" is as follows:
+
+```
+findstr flags "text" file
+findstr "hello" * # current directory
+findstr "hello" *.md # .md files only
+```
+
+
+** git
+
+Get has its own version of grep. To use it, you must be in a git repository. You can then search for text in the git repository with:
+
+```
+git grep 'text'
+```
+
+** emacs eshell
+
+`grep` is implemented in the emacs eshell. Allowing you to use it under different operating systems and outside of a git repo. To run eshell's grep, use the following template:
+
+```
+grep text files/directory
+grep 'text' . # To search current directory
+grep -r 'text' . # recursively search current directory
+grep -rw 'text' . # recursively search current directory for 'text' as a whole word
+```

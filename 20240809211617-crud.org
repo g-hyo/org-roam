@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       2f469579-c6ac-4590-8e32-5e36d06ab890
+:END:
+#+title: CRUD
+
+In computer programming, CRUD (Create, Read, Update, Delete) are the four basic operations of persistent storage. CRUD can also be used to describe user interface conventions that facilitate interactions with data.
+
+* SQL Example
+
+In standard SQL, each aspect of CRUD can be mapped to a SQL statement
+
+- Create - INSERT
+- Read - SELECT
+- Update - UPDATE
+- Delete - DELETE
+
+* RESTFUL APIs
+
+Restful APIs also map each aspect of CRUD.
+
+- Create - POST/PUT
+- Read - GET
+- Update - PUT to replace, PATCH to modify
+- Delete - DELETE

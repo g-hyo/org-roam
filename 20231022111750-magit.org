@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       7c194cc4-1424-498a-ab3d-dc23ad674c2a
+:END:
+#+title: magit
+
+Magit is a Git porcelain inside Emacs. Essentially, this is a text-based user interface to [[id:9bc03064-2d2a-4293-a72f-e8f02817ba69][git]].
+
+The idea behind magit is to provide a prettified interface to git.
+
+The term Porcelain stems from git's own differentiation between low level commands ("plumbing") and more user-friendly commands ("porcelain").
+
+* Personal experience
+
+My own personal experience with magit is that it is pretty slow on Windows unfortunately. Aside from this, the possible convenience of running very quick commits with keyboard commands is definitely appealing.
+
+* References
+
+https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain
+
+https://magit.vc/

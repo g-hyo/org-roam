@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e50db1f0-b252-41d9-af34-9e3ccd5c8442
+:END:
+#+title: regularisation
+
+In mathematics and machine learning, regularisation is a processes that simplifies results. In machine learning, it is often used to prevent overfitting.

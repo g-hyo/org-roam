@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0f244946-03a2-4eb2-a604-c316dea0187d
+:END:
+#+title: vertico
+
+Vertico is a powerful completion system for use with the mini-buffer in [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][emacs]].

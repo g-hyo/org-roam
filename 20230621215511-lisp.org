@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c5bd55e5-b21f-4d56-967e-d717ca260aa9
+:END:
+#+title: lisp
+
+LISP is a programming language. It is notably used in the [[id:1897a0ff-0869-480f-abc4-3845d175fdb2][Emacs]] text editor
+which allows it to be extremely customisable.

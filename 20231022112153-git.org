@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9bc03064-2d2a-4293-a72f-e8f02817ba69
+:END:
+#+title: git
+
+Git is a free and open source distributed version control system.
+
+* Hacks
+
+`git commit --fixup <sha>`
+
+`git rebase --autosquash <SHA>``
+
+* References
+
+https://git-scm.com/

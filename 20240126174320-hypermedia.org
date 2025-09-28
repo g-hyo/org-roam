@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3a42e66e-4861-4ae8-8346-1f3c20d83d01
+:END:
+#+title: hypermedia
+
+Hypermedia is an extension of the term [[id:ea80efa2-411f-4c41-9371-2fd0f4e2c22e][hypertext]], to include graphics, audio and video in addition to plain text and hyperlinks.
+
+The World Wide Web is a classic example of hypermedia.

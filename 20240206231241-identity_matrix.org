@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5da1f36b-6976-4498-b2fd-3738cd751ac6
+:END:
+#+title: identity matrix
+
+$I$ is the identity matrix, which is a square matrix with 1s on the diagonal and zeros elswhere

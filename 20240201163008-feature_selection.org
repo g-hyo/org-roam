@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7c151b64-b6e1-481c-9b04-c3997f6b2a55
+:END:
+#+title: feature selection
+
+Feature selection (also known as variable selection) is the processes of selecting a subset of relevant features (variables, predictors) for use in a statistical model.

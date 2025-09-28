@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       95753a17-9804-44dd-a6c7-f47cd7ad3b0e
+:END:
+#+title: Cramers V
+
+Cramer's V In statistics, Cramér's V (sometimes referred to as Cramér's phi and denoted as φc) is a measure of association between two nominal variables, giving a value between 0 and +1 (inclusive). It is based on Pearson's chi-squared statistic and was published by Harald Cramér in 1946.
+
+* References
+https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V

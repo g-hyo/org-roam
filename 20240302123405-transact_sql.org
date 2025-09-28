@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       078560e9-3b2a-4e54-96b1-c0c42245bd1d
+:END:
+#+title: Transact SQL
+
+Transact-SQL (T-SQL) is Microsoft's extension to [[id:0cf1506f-b63c-48b6-84b8-26c46b08d9d6][sql]], which is used to interact with Microsoft [[id:7c3a0269-8618-49b9-9295-1e87a4880c63][sql server]]
+
+It expands SQL to include local variables, procedural programming and string processing.
+
+* Variables
+
+T-SQL lets you declare and set local variables with `DECLARE` and `SET`
+
+#+
+DECLARE @var1 NVARCHAR(30);
+SET @var1 = 'Some Name';
+
+SELECT *
+FROM table
+WHERE name = @var1
+#+
+
+* Flow control
+
+T-SQL allows flow control such as `IF/ELSE`, `BEGIN/END`, `CONTINUE`, `GOTO`, `RETURN`, `WHILE`, `WAITFOR`
+
+`BEGIN` and `END` mark a block of statments. For example, if you would like to add multiple statements to a conditional, use `BEGIN` and `END`
+
+#+
+IF DATEPART(dw, GETDATE()) = 7 OR DATEPART(dw, GETDATE()) = 1
+BEGIN
+   PRINT 'It is the weekend.';
+   PRINT 'Get some rest on the weekend!';
+END;
+ELSE
+BEGIN
+   PRINT 'It is a weekday.';
+   PRINT 'Get to work on a weekday!';
+END;
+#+
+
+* DELTE and UPDATE
+
+Compared to SQL, DELETE and UPDATE allow data from another table to be used in the operation, without the need for a subquery. Essentially, you can add a `FROM` clause to these.
+
+For example:
+
+#+
+DELETE u
+FROM users AS u INNER JOIN user_flags AS f ON u.id = f.id
+WHERE f.name = 'idle';
+#+
+
+This will delete `users` with a flag in `user_flags` with the `name` = "idle".
+
+* BULK INSERT
+
+`BULK` is a T-SQL statement that allows the insertion of multiple rows into a table from an external file. This has better performance compared to indvidual `INSERT` statements.

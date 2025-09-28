@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       61be1fcd-5a2e-4091-8846-205a5dfef480
+:END:
+#+title: Graph Theory
+
+In mathematics, graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of vertices (also called nodes or points) which are connected by edges (also called links or lines). A distinction is made between undirected graphs, where edges link two vertices symmetrically, and directed graphs, where edges link two vertices asymmetrically. Graphs are one of the principal objects of study in discrete mathematics. 
+
+* Graph properties
+
+* igraph tips
+
+In the R igraph package, force directed layouts can interpret weight. You can set the weight parameter to increase attraction forces among nodes connected by heavier edges.
+
+
+* References
+
+https://en.wikipedia.org/wiki/Graph_theory
+
+http://www.kateto.net/wp-content/uploads/2019/06/Sunbelt%202019%20R%20Network%20Visualization%20Workshop.pdf
+
+Linked: The New Science of Networks by Albert-László Barabási

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       84413169-151d-45fc-875c-8caece3f7f10
+:END:
+#+title: HTTP status code
+
+
+HTTP response status codes indicate whether a [[id:7aa246c5-96ba-4635-8d80-c35d96d897d5][http]] request has been successfully completed.
+
+There are 5 classes of responses.
+
+1. Informational (100-199)
+2. Succesful (200-299)
+3. Redirection (300-399)
+4. Client error (400-499)
+5. Server error (500-599)
+
+* Reference
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

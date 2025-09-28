@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       151393bd-2314-4b11-8ca2-61ecc932115c
+:END:
+#+title: Remote Desktop Protocol (RDP)
+
+Remote Desktop Protocol is a proprietary protocol developed by Microsoft Corporation which provides a user with a graphical interface to connect to another computer over a network connection.
+
+** Issues
+
+If your taskbar, is appearing over the remote, you may want to restart "Windows Explorer" as per instrucitons in this link: http://how-i-fixed-it.blogspot.com/2017/01/windows-remote-desktop-local-taskbar.html

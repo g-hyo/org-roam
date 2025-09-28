@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       5f024777-5553-4c73-aad3-9058e83242b0
+:END:
+#+title: emacs
+
+Emacs is a text editor. Thanks to the Lisp programming language, it
+contains a few very powerful packages such as orgmode and [[id:d3c13339-8801-4ae1-8bd7-938541435dc6][orgroam]]
+
+

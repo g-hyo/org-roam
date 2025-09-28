@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6465a30e-87ef-483b-9448-d153006920a5
+:END:
+#+title: windows search bar
+
+The windows search bar annoyingly sometimes hangs (i.e., when you click on search, it never shows anything).
+
+If this happens to you, you can simply run task manager, and click `end task` on windows explorer. Your task bar will then disappear.
+
+After this, click File > run new task, and type in `explorer.exe`.
+
+The search bar should work again

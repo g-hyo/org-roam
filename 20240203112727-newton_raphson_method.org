@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       648c9790-5069-4b04-9973-c1b84863f812
+:END:
+#+title: Newton-Raphson method
+
+The Newton-Raphson method, also known as Newton's method, is a root-finding algorithm which produces successively better approximations to the roots (zeroes) of a real-valued function.
+
+* Formula
+
+x1 = x0 - f(x0)/f'(x0)
+
+Where:
+- f is a real valued function
+- f' is its derivative
+- x0 is an initial guess for a root
+
+x1 should be a better approximation of the root than x0
