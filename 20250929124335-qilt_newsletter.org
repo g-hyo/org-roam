@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e8945ca6-eebe-455a-b4ef-5b54d2ececfa
+:END:
+#+title: qilt newsletter
+#+filetags: :qilt:
+
+The QILT newsletter goes out every first Wednesday of the month.
+
+In it, the QILT team outlines the latest happenings in QILT over the last month.
+
+* Updating
+
+To update the QILT newsletter, the QILT team will typically use last year's newsletter as a template (QILT timeline is roughly the same every year) making sure to update the dates as well as any other details
