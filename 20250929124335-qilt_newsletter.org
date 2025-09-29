@@ -8,6 +8,29 @@ The QILT newsletter goes out every first Wednesday of the month.
 
 In it, the QILT team outlines the latest happenings in QILT over the last month.
 
+* Location
+
+QILT > General > Newsletter > `YEAR`
+
 * Updating
 
 To update the QILT newsletter, the QILT team will typically use last year's newsletter as a template (QILT timeline is roughly the same every year) making sure to update the dates as well as any other details
+
+** Checking
+
+Once a first version of the newsletter is drafted with the main body content, it is best to get the individual QILT project managers to review their content and modify/add as appropriate
+
+** Department copy
+
+Once the newsletter is finalised, a copy is sent to the department, not for approval (this output does not require sign off), but just for them to be across it and to identify if they have any misunderstandings about the current process
+
+** Updating contacts
+
+Before sending this out, we need to ensure that the newsletter contacts on Vision6 are the latest. This means that any new contacts from the following sources need to be added in:
+- PASF
+- QILT Inbox
+- QILT provider portal accounts with newsletter box ticked
+
+** Sending
+
+Newsletter is sent via Vision6, so we need to create a message in V6
