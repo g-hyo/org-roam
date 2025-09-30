@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       637c279c-ca3a-4424-b3ee-77bd9e0880f9
+:END:
+#+title: orgroam-ui
+
+orgroam-ui is a graphical frontend for exploring your [[id:6d3fc946-e117-4267-bd96-205e8ff84277][orgroam]] knowledge base
+
+It is an emacs package
+
+* Reference
+
+https://github.com/org-roam/org-roam-ui?tab=readme-ov-file

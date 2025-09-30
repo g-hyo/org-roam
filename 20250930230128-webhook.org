@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       aec83879-21f3-4999-a436-54a17a9798ee
+:END:
+#+title: webhook
+
+A webhook is an event-driven communication that automatically sends data between applications via [[id:7aa246c5-96ba-4635-8d80-c35d96d897d5][http]].

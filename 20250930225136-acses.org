@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4301b187-19c0-4e9f-b583-e1fc9a84ae1c
+:END:
+#+title: ACSES
+#+filetags: :qilt:
+
+
+ACSES (the Australian Centre for Student Equity and Success) is a national research and policy centre funded by the Australian Government Department of Education, and based at Curtin University

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0df78aa3-cd5d-40c2-9dfd-01b47e9672ac
+:END:
+#+title: qilt ess
+#+filetags: :qilt:
+
+The employer satisfaction survey is a survey of the supervisors of employed (excluding self-employed) graduates from GOS.
