@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       467b9d2f-ccff-4354-ab4d-3821ae7fe9fc
+:END:
+#+title: wsl
+
+Windows subsystem for Linux is a component of Microsoft Windows that allows the use of a Linux environment from within Windows.
