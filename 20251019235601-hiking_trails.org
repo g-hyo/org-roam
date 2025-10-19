@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       545e01d2-e126-4867-9f7c-814a7983062e
+:END:
+#+title: hiking trails
+
+Hiking trails of Melbourne
+
+* Easy
+
+* Medium
+
+* Hard
+
+[[id:dd117f31-5e67-482d-bb1f-b7ee598689dd][lerderderg]]
