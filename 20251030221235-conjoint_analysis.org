@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       c93e1de1-074a-4dfe-8971-55990884a1f3
+:END:
+#+title: conjoint analysis
+
+Conjoint analysis in survey research is a technique used to understand how different features of products are valued.
+
+The assumption is that a product can be broken down into a set of attributes that impact the users perceived value
+
+# Technique
+
+Sources are relatively vague, but my understanding is that respondents are shown 'mock' products which are essentially combinations of levels of the constituent attributes.
+
+Respondents are then asked to choose from, rank or rate the products shown.
+
+Presumably, the data are then used in terms of their raw values
+
+# References
+
+https://en.wikipedia.org/wiki/Conjoint_analysis

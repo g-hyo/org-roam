@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       a7ae6968-1a11-4476-9473-cb0db70ac59d
+:END:
+#+title: shapley regression
+
+Shapley regression is a statistical method used to measure the contribution of individual predictors in a regression model.
+
+It accounts for unique variance explained for each of the predictors in the model
+
+Shapley regression uses [[id:9816ca36-dd86-43a9-8a96-4c36170224f0][shrinkage estimator]]s.
+
+You can calculate Shapley values in R with the `ShapleyValue` package
+
+# Steps
+
+1. First compute linear regressions for all combinations of predictors and R squared values
+
+2. Calculate R squared improvement when each predictor is added to the model
+
+3. Calculate the weighted average of R squared improvement for each predictor (across all models which include it)
+
+The weights are determined by the number of models with X predictors.
+I.e., if there are multiple numbers with X predictors, the weight is split.
+
+For example
+
+1/3 + 1/6 + 1/6 + 1/3
+
+For a model with 3 predictors when taking the weighted average improvement for predictor A
+
+One model with one predictor, two models with two predictors, one model with three predictors
+
+4. Rebase the weighted average incremental improvement so that they sum to 100
+
+# Outcome
+
+The weighted average incremental improvement takes into account correlations because the improvement in fit is what is used to determine 'importance'
+
+# Reference
+
+https://en.wikipedia.org/wiki/Shapley_value
+
+Driver Analysis (2nd Edition)

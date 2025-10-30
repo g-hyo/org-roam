@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID:       73e393d9-bcdf-4a2e-84fa-ad8c455da2c7
+:END:
+#+title: driver analysis
+
+Driver analysis is a type of regression that is commonly used in survey research
+
+# When to use
+
+Driver analysis is used to work out what is most important. It is not used for quantitative predictions, or behavioural/demographic data.
+
+Drivers must be dimensions or components of performance, not demographic or behavioural predictors.
+
+# Components
+
+In driver analysis, predictors are reffered to as `drivers`. Each of these `drivers` are given `importance` scores.
+
+# Output
+
+The typical out from driver analysis is a table or chart showing the relative importance of different drivers
+
+# Assumptions
+
+Predictors are numeric rather than categorical, and assume a positive direction
+
+Each record is an observation (i.e., 3NF or tidy data)
+
+# Specifics
+
+Under the hood, Q runs different types of regression models depending on the type of data for the outcome of interest
+
+- Binary - Binary logit
+- Ordinal data up to 11 - Ordered logit
+- Ordinal data above 11 - Linear regression
+- The set of integers - Linear regression
+- Quantities - NBD (Negative Binomial distribution) or quasi-poisson regression
+- [[id:510e3d03-17c9-4377-b253-337dc61f9c2f][maxdiff]] - (Utility score) Linear regression
+- [[id:c93e1de1-074a-4dfe-8971-55990884a1f3][conjoint analysis]] - Linear regression on (utilities)
+
+# Complications
+
+The above techniques have issues when there is:
+- high multicollinearity
+- different scales or scale usage in the predictor variables
+- noise in the data?
+- uncertainty about which predictors to use
+
+The solution is to use
+[[id:a7ae6968-1a11-4476-9473-cb0db70ac59d][shapley regression]] or Johnson's Relative Weights
+
+
+Note that the former is safer to use when data is linear. The latter however, may be faster.
+
+# Missing data
+
+Missing data must be imputed. Q recommends using dummy variable adjustment, then partial data/pairwise correlations, and then multiple imputation
+
+# Assumptions
+
+# Importance of scales of predictor variables
+
+In regular regression, the coefficients depend on the scale of the predictor. This means that they are not necessarily comparable in terms of 'importance'.
+
+Since our goal is to measure 'importance', we ideally would like all of our predictors to be on the same scale, so that the coefficients can show you whether
+one item has a larger or smaller impact on another.
+
+
+
+
+# Reference
+
+Driver Analysis, 2nd edition (Q Research Software, 2021)

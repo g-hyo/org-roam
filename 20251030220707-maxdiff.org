@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       510e3d03-17c9-4377-b253-337dc61f9c2f
+:END:
+#+title: maxdiff
+
+MaxDiff in survey research is a technique for working out relative preference.
+
+# Context
+
+When asking people to provide rankings, people are likely to give poor data for the middle options
+
+# Solution
+
+Generally, the top and bottom choices will be reliable.
+
+MaxDiff leverages this, and forces respondents to choose best and worst attributes from subsets of the original set.

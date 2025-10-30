@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9816ca36-dd86-43a9-8a96-4c36170224f0
+:END:
+#+title: shrinkage estimator
+
+Shrinkage estimators explicitly or implicitly incorporate the effects of [[id:6ea41161-7b01-4b33-be35-09a7179d5e12][shrinkage.]]

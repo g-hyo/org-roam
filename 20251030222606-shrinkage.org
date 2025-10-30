@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6ea41161-7b01-4b33-be35-09a7179d5e12
+:END:
+#+title: shrinkage
+
+Shrinkage in staitistics is the reduction in the effects of sampling variation.
+
+In regression, the fit will always be worse when applied to test data.
+
+Shrinkage seeks to get around this by biasing the estimate towards 0
